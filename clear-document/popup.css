@@ -1,0 +1,14 @@
+body {
+  width: 240px;
+  font-size: 12px;
+}
+.btn {
+  border: 1px solid #888;
+  border-radius: 2px;
+  transition: all .6 ease;
+}
+.btn:hover {
+  background: #888;
+  color: #fff;
+  border: none;
+}

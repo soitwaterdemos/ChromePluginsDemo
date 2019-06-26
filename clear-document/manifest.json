@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "clear-document",
+  "description": "clear document by Readability.js",
+  "version": "0.0.1",
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "permissions": ["tabs"],
+  
+  "background": {
+    "scripts": []
+  },
+  "browser_action": {
+    "default_icon": {
+	  "16": "icon-mi.png",
+	  "32": "icon.png"
+	},
+	"default_title": "网页去噪",
+	"default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches":["<all_urls>"],
+    "js": [ "Readability.js", "content_scripts.js"]
+  }]
+}
